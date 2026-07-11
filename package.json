@@ -1,0 +1,46 @@
+{
+  "name": "daily-trend-radar",
+  "version": "1.0.0",
+  "description": "Daily Trend Radar — transparent desktop overlay for daily trends",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "dev:electron": "cross-env NODE_ENV=development electron .",
+    "build": "vite build",
+    "build:full": "npm run build && electron-builder",
+    "preview": "vite preview",
+    "lint": "eslint src electron --ext .ts,.tsx"
+  },
+  "keywords": [
+    "electron",
+    "desktop",
+    "trends",
+    "overlay"
+  ],
+  "author": "Daily Trend Radar",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.18.0",
+    "electron-store": "^11.0.2",
+    "node-cron": "^4.4.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/node-cron": "^3.0.11",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^6.0.2",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^42.4.1",
+    "electron-builder": "^26.15.3",
+    "esbuild": "^0.28.1",
+    "rollup": "^4.62.2",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16",
+    "vite-plugin-electron": "^0.29.0",
+    "vite-plugin-electron-renderer": "^0.14.6"
+  }
+}

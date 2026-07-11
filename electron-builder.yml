@@ -1,0 +1,26 @@
+appId: com.dailytrendradar.app
+productName: Daily Trend Radar
+directories:
+  output: release
+files:
+  - dist/**/*
+  - dist-electron/**/*
+  - node_modules/**/*
+  - package.json
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: public/icon.ico
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+mac:
+  target: dmg
+  icon: public/icon.icns
+linux:
+  target: AppImage
+  icon: public/icon.png
